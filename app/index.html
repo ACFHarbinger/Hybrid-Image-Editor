@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Hybrid-Image-Editor/app/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hybrid Image Editor — an extensible image-first workspace for intelligent editing."
+    />
+    <title>Hybrid Image Editor</title>
+    <script>
+      // GitHub Pages SPA deep-link restore: public/404.html redirects
+      // unknown paths to "/?/actual/path" before this script rewrites the
+      // URL back via history.replaceState, so React Router sees the real path.
+      (function () {
+        var redirect = sessionStorage.getItem("spa-redirect");
+        if (redirect) {
+          sessionStorage.removeItem("spa-redirect");
+          var restored = redirect.replace(/~and~/g, "&");
+          if (restored !== location.href) {
+            history.replaceState(null, "", restored);
+          }
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/Hybrid-Image-Editor/app/assets/index-DlFZu15j.js"></script>
+    <link rel="stylesheet" crossorigin href="/Hybrid-Image-Editor/app/assets/index-3n4teGPH.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
